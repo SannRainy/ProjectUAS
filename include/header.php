@@ -22,6 +22,9 @@
         </nav>
         </div>
     </header>
+    <article>
+        <p>Hello World</p>
+    </article>
     <script src="js/script.js"></script>
 </body>
 </html>
