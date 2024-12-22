@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
+    <?php include 'home.php'; ?>
 
     <?php include 'includes/footer.php'; ?>
 </body>
