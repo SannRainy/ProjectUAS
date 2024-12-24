@@ -1,4 +1,3 @@
-<?php include 'includes/header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,5 @@
 <body>
     <?php include 'home.php'; ?>
 
-    <?php include 'includes/footer.php'; ?>
 </body>
 </html>
