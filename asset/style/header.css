@@ -1,0 +1,30 @@
+nav{
+    background-color: aqua;
+}
+nav>.nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+.article-container {
+    grid-template-columns: 1fr 3fr; /* Sidebar: 1 part, Main Content: 3 parts */
+    gap: 10px; /* Add space between grid items */
+    padding: 20px;
+  }
+  
+  #sd-title {
+    background-color: lightcoral;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #tp-title {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #word {
+    background-color: lightgreen;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }

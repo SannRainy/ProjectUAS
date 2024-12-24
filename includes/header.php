@@ -21,6 +21,13 @@
             </ul>
         </nav>
         </div>
+        <div class="article-container">
+            <article>
+            <h1 id="sd-title">Konsep Isekai Resident</h1>
+            <h1 id="tp-title">Living in your Dream</h1>
+            <p id="word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui quia tempora. Soluta ad, velit asperiores consequatur nam et cumque labore autem voluptatibus? At, eius. Nisi consequatur officiis minima dolores!</p>
+            </article>
+        </div>
     </header>
     <article>
         <p>Hello World</p>
