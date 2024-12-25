@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/style/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <title>My Website</title>
 </head>
 <body>
     <header>
     <div class="Dashboard">
+    <div class="Background">
+        <img src="asset\img\5630939.jpg" alt="Background Image" class="bg-img">
     <div class="Button-container">
         <nav>
             <p>Isekai Resident</p>
@@ -30,6 +33,7 @@
                 </div>        
             </article>
         </div>
+    </div>
     </div>
     </header>
 </body>
