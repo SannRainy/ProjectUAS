@@ -19,19 +19,15 @@
                 <li><a href="Product.php" class="social-button">Product</a></li>
                 <li><a href="Location.php" class="social-button">Location</a></li>
                 <li><a href="ContactUs.php" class="social-button">Contact Us</a></li>
-
             </ul>
         </nav>
         </div>
         <div class="article-container">
             <article>
                 <div class="sd-title">
-                    <p style="font-weight: Bold;">Konsep <br> Isekai <br> Resident</p>
-                </div>
-            <div class="tp-title">
-                <h1>Living in your Dream</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui quia tempora. <br>Soluta ad, velit asperiores consequatur nam et cumque labore autem voluptatibus? At, eius. <br>Nisi consequatur officiis minima dolores!</p>
-            </div>          
+                    <p style="font-size:18px; font-weight: Bold; color: #fff; text-align: left; line-heigth: 1,5;">Isekai Resident</p>
+                    <h1 style="color: #fff; text-align: left">PENGALAMAN HIDUP<br>YANG TENANG DAN DAMAI</h1>
+                </div>        
             </article>
         </div>
     </div>
