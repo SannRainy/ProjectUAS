@@ -9,13 +9,15 @@
 </head>
 <body>
     <header>
+    <div class="Dashboard">
     <div class="Button-container">
         <nav>
-            <ul class="nav-list">
-            <li><a href="home.php" class="social-button">Dashboard</a></li>
-                <li><a href="home.php" class="social-button">Home</a></li>
+            <p>Isekai Resident</p>
+            <ul class="nav-list" style="list-style-type: none;">
+            <li><a href="home.php" class="social-button">Home</a></li>
                 <li><a href="AboutUs.php" class="social-button">About Us</a></li>
                 <li><a href="Product.php" class="social-button">Product</a></li>
+                <li><a href="Location.php" class="social-button">Location</a></li>
                 <li><a href="ContactUs.php" class="social-button">Contact Us</a></li>
 
             </ul>
@@ -23,15 +25,16 @@
         </div>
         <div class="article-container">
             <article>
-            <h1 id="sd-title">Konsep Isekai Resident</h1>
-            <h1 id="tp-title">Living in your Dream</h1>
-            <p id="word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui quia tempora. Soluta ad, velit asperiores consequatur nam et cumque labore autem voluptatibus? At, eius. Nisi consequatur officiis minima dolores!</p>
+                <div class="sd-title">
+                    <p style="font-weight: Bold;">Konsep <br> Isekai <br> Resident</p>
+                </div>
+            <div class="tp-title">
+                <h1>Living in your Dream</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui quia tempora. <br>Soluta ad, velit asperiores consequatur nam et cumque labore autem voluptatibus? At, eius. <br>Nisi consequatur officiis minima dolores!</p>
+            </div>          
             </article>
         </div>
+    </div>
     </header>
-    <article>
-        <p>Hello World</p>
-    </article>
-
 </body>
 </html>
