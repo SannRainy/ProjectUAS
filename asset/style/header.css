@@ -1,15 +1,20 @@
+.Dashboard{
+  background-color: #3e4854;
+}
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center ;
   font-weight: bold;
+  color: #fff;
   padding: 10px;
+  padding-left: 20px;
 }
 .nav-list {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  padding: 0;
+  padding-right: 20px;
 }
 
 .nav-list>li {
@@ -17,17 +22,12 @@ nav{
 }
 .social-button {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
-
-article{
+.article-container{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
-.sd-title, .tp-title {
-  margin: 0;
-  text-align: center;
+article{
+  flex-direction: column;
+  padding-left: 50px;
 }

@@ -25,7 +25,7 @@
         <div class="article-container">
             <article>
                 <div class="sd-title">
-                    <p style="font-size:18px; font-weight: Bold; color: #fff; text-align: left; line-heigth: 1,5;">Isekai Resident</p>
+                    <p style="font-size:18px; font-weight: Bold; color: #fff; text-align: left;">Isekai Resident</p>
                     <h1 style="color: #fff; text-align: left">PENGALAMAN HIDUP<br>YANG TENANG DAN DAMAI</h1>
                 </div>        
             </article>
