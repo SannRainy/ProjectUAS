@@ -21,3 +21,46 @@ body {
   object-fit: cover;
 }
 */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex:hover .side-bg {
+  transform: scale(1.05); /* Slightly scale up the background on hover */
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.nav-item {
+  transition: transform 0.4s ease-in-out; /* Durasi 0.4 detik dengan efek easing */
+}
+
+.nav-item:hover {
+  transform: scale(1.20);
+  /*Hoverzoomeffect*/-webkit-transform: scale(1.45);
+  -moz-transform: scale(1.20);
+  -ms-transform: scale(1.20);
+  -o-transform: scale(1.20);
+  -webkit-transform: scale(1.20);
+}
+
+.nav-item {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.nav-item:hover .side-bg {
+  transform: scale(1.05); /* Slightly scale up the background on hover */
+}
+
+.nav-item {
+  animation: fadeInUp 1s ease-in-out;
+}

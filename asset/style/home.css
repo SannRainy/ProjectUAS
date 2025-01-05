@@ -1,0 +1,213 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+/* Side Image and Text */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-bg {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.side-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-text {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.right-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.right-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Hover Effect on Image */
+.side-bg:hover .side-img img {
+    transform: translate(-50%, -50%) scale(1.1); /* Zoom in effect */
+}
+
+.d-flex:hover .side-bg {
+    transform: scale(1.05); /* Slightly scale up the background on hover */
+}
+
+/* Title and Cards Section */
+.title-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.title-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cards Container */
+.card-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card {
+    width: 18rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hover zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card-item:hover {
+    transform: scale(1.05); /* Hover zoom effect */
+    
+}
+
+
+/* Profile Cards */
+.card-contain > div {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    transition: transform 0.3s ease;
+}
+
+.card-contain > div:hover {
+    transform: translateY(-10px); /* Hover animation */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-contain > div h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card-contain > div p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-contain > div span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .side-bg, .right-text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-bg, .right-text {
+        width: 100%;
+    }
+
+    .title-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .title-text p {
+        font-size: 1rem;
+    }
+
+    .card-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .card-contain > div {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Scroll Animation for Side Text and Image */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menambahkan class yang akan mengaktifkan animasi */
+.fade-in-up {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
+
+.d-flex {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
+
+.card {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
+.card-item {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
