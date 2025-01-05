@@ -53,14 +53,11 @@ body {
   -webkit-transform: scale(1.20);
 }
 
-.nav-item {
-  animation: fadeInUp 1s ease-in-out;
-}
-
 .nav-item:hover .side-bg {
   transform: scale(1.05); /* Slightly scale up the background on hover */
 }
 
 .nav-item {
   animation: fadeInUp 1s ease-in-out;
+  -webkit-animation: fadeInUp 1s ease-in-out;
 }
