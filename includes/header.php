@@ -84,34 +84,88 @@
         dolore neque laboriosam magni perspiciatis tempore nisi minus blanditiis ducimus amet.</p>
     </div>
 <!--Card Container-->
-    <div class="card-contain d-flex justify-content-between gap-4">
-    <div class="card" style="width: 18rem; margin-top: 2rem;">
-        <img src="asset\img\bg_card-item1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem; margin-top: 2rem;">
-        <img src="asset\img\bg_card-item2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem; margin-top: 2rem;">
-        <img src="asset\img\bg_card-item3.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    </div>
+<div class="card-contain d-flex flex-column flex-md-row justify-content-between gap-4">
+<div class="card" style="width: 18rem; height: 20rem; margin-top: 2rem;">
+    <a href="#" style="text-decoration: none; color: inherit; height: 100%; display: block;">
+        <img src="asset/img/bg_card-item1.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;"></a>
+</div>
+<div class="card" style="width: 18rem; height: 20rem; margin-top: 2rem;">
+    <a href="#" style="text-decoration: none; color: inherit; height: 100%; display: block;">
+        <img src="asset/img/bg_card-item2.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;"></a>
+</div>
+<div class="card" style="width: 18rem; height: 20rem; margin-top: 2rem;">
+    <a href="#" style="text-decoration: none; color: inherit; height: 100%; display: block;">
+        <img src="asset/img/bg_card-item3.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;"></a>
+</div>
+</div>
+<!--Profile Card-->
+<div style="display: flex; gap: 2rem; justify-content: center; padding-top: 4rem; padding-bottom: 4rem; color: #fff;">
+  <!-- Card 1 -->
+  <div style="width: 300px; border-radius: 10px; padding: 20px; text-align: center;">
+    <div style="width: 80px; height: 80px; background-color: #ccc; border-radius: 50%; margin: 0 auto 20px;"></div>
+    <p style="font-size: 14px; line-height: 1.5; margin: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <h4 style="font-size: 18px; margin: 10px 0; font-weight: bold;">Farhan Firmansyah</h4>
+    <span style="font-size: 14px; color: #aaa;">Raja iblis</span>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 300px; border-radius: 10px; padding: 20px; text-align: center;">
+    <div style="width: 80px; height: 80px; background-color: #ccc; border-radius: 50%; margin: 0 auto 20px;"></div>
+    <p style="font-size: 14px; line-height: 1.5; margin: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <h4 style="font-size: 18px; margin: 10px 0; font-weight: bold;">Krisna Satya A.</h4>
+    <span style="font-size: 14px; color: #aaa;">Komandan Iblis 1</span>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 300px; border-radius: 10px; padding: 20px; text-align: center;">
+    <div style="width: 80px; height: 80px; background-color: #ccc; border-radius: 50%; margin: 0 auto 20px;"></div>
+    <p style="font-size: 14px; line-height: 1.5; margin: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <h4 style="font-size: 18px; margin: 10px 0; font-weight: bold;">M. Hernanda Fikri W.</h4>
+    <span style="font-size: 14px; color: #aaa;">Komandan Iblis 2</span>
+  </div>
+
+  <!-- Card 4 -->
+  <div style="width: 300px; border-radius: 10px; padding: 20px; text-align: center;">
+    <div style="width: 80px; height: 80px; background-color: #ccc; border-radius: 50%; margin: 0 auto 20px;"></div>
+    <p style="font-size: 14px; line-height: 1.5; margin: 10px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <h4 style="font-size: 18px; margin: 10px 0; font-weight: bold;">Nanda Muhammad F.</h4>
+    <span style="font-size: 14px; color: #aaa;">Komandan Iblis 3</span>
+  </div>
+</div>
 </div>
 </main>
+<!--footer-->
+<footer style="background-color: #95a5a6; padding: 1.25rem; color: #fff;">
+  <div style="display: flex; justify-content: space-between; max-width: 62.5rem; margin: auto; padding-top: 3rem;">
+    <!-- Kontak -->
+    <div>
+      <h2 style="margin: 0 0 0.625rem;">Hubungi Kami</h2>
+      <p style="margin: 0.3125rem 0;">PHONE</p>
+      <p style="margin: 0;">081-756.2003</p>
+      <p style="margin: 0;">081-756.2003</p>
+      <p style="margin: 0.3125rem 0;">Office Isekai Residence<br>Japan</p>
+      <p style="margin: 0.3125rem 0;">WHATSAPP (MARKETING)</p>
+      <p style="margin: 0;"><strong>+62880404XXXX</strong></p>
+      <p style="margin: 0.3125rem 0;">EMAIL</p>
+      <p style="margin: 0;">infoisekairesidence@japan.com</p>
+    </div>
+    <!-- Menu -->
+    <div>
+      <h3 style="margin: 0 0 0.625rem;">MENU</h3>
+      <p style="margin: 0.3125rem 0;">About Us</p>
+      <p style="margin: 0.3125rem 0;">Product</p>
+      <p style="margin: 0.3125rem 0;">Location</p>
+      <p style="margin: 0.3125rem 0;">Contact Us</p>
+    </div>
+    <!-- Others -->
+    <div>
+      <h3 style="margin: 0 0 0.625rem;">OTHERS</h3>
+      <p style="margin: 0.3125rem 0;">Privacy Policy</p>
+      <p style="margin: 0.3125rem 0; font-weight: bold;">FOLLOW US</p>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
