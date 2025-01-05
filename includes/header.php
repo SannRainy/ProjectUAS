@@ -20,19 +20,19 @@
     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
       <ul class="navbar-nav gap-5" style="padding-right: 3rem;">
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: white; font-size: 1rem;">Home</a>
+          <a class="nav-link" href="home.php" style="color: white; font-size: 1rem;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: white; font-size: 1rem;">About us</a>
+          <a class="nav-link" href="AboutUs" style="color: white; font-size: 1rem;">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: white; font-size: 1rem;">Product</a>
+          <a class="nav-link" href="Product.php" style="color: white; font-size: 1rem;">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: white; font-size: 1rem;">Location</a>
+          <a class="nav-link" href="Location.php" style="color: white; font-size: 1rem;">Location</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: white; font-size: 1rem;">Contact Us</a>
+          <a class="nav-link" href="ContactUs.php" style="color: white; font-size: 1rem;">Contact Us</a>
         </li>
       </ul>
     </div>
