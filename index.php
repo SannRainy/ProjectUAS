@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'home.php'; ?>
+    <?php include 'login.php'; ?>
 
 </body>
 </html>

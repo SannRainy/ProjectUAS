@@ -1,3 +1,20 @@
+<?php
+session_start();
+if(isset($_POST['logout'])){
+   session_unset();
+   session_destroy();
+   header('location: index.php');
+   exit();
+}
+
+
+if (!isset($_SESSION["username"])) {
+
+   header('location: login.php');
+   exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +56,11 @@
       </ul>
     </div>
   </div>
+  <div class="Button-logout">
+         <form action="home.php" method="POST">
+            <button type="submit" name="logout">logout</button>
+         </form>
+         </div>
 </nav>
 
 <!-- Background Image with Text -->
