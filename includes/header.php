@@ -98,7 +98,6 @@
                 </div>
             </div>
         </nav>
-
         <!-- Background Image with Text -->
         <div class="bg-img">
             <img src="asset/img/bg_head.png" alt="Background Image">
@@ -129,7 +128,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum quod eum. Nam vel molestias libero alias assumenda repellat cum excepturi, quasi inventore adipisci ullam nulla, veniam qui sequi debitis.</p>
             </div>
         </div>
-
         <!-- Title and Card -->
         <div class="d-flex flex-column align-items-center" style="width: 100%; padding-top: 3rem;">
             <div class="title-text d-flex flex-column text-center" style="color: white;">
