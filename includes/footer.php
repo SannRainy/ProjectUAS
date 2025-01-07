@@ -16,8 +16,8 @@
             </div>
             <!-- Menu -->
             <div class="col-md-4">
-                <h3>MENU</h3>
-                <ul class="list-unstyled">
+                <h3 class="text-center">MENU</h3>
+                <ul class="list-unstyled text-center">
                     <li><a href="AboutUs.php" class="text-white">About Us</a></li>
                     <li><a href="Product.php" class="text-white">Product</a></li>
                     <li><a href="Location.php" class="text-white">Location</a></li>
@@ -26,9 +26,9 @@
             </div>
             <!-- Others -->
             <div class="col-md-4">
-                <h3>OTHERS</h3>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                <h3 class="text-center">OTHERS</h3>
+                <ul class="list-unstyled text-center">
+                    <li><a href="#" class="text-white ">Privacy Policy</a></li>
                     <li><strong>FOLLOW US</strong></li>
                     <li><a href="#" class="text-white">Facebook</a></li>
                     <li><a href="#" class="text-white">Twitter</a></li>
