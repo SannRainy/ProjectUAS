@@ -1,35 +1,42 @@
-<footer style="background-color: #95a5a6; padding: 1.25rem; color: #fff;">
-  <div style="display: flex; justify-content: space-between; max-width: 62.5rem; margin: auto; padding-top: 3rem;">
-    <!-- Kontak -->
-    <div>
-      <h2 style="margin: 0 0 0.625rem;">Hubungi Kami</h2>
-      <p style="margin: 0.3125rem 0;">PHONE</p>
-      <p style="margin: 0;">081-756.2003</p>
-      <p style="margin: 0;">081-756.2003</p>
-      <p style="margin: 0.3125rem 0;">Office Isekai Residence<br>Japan</p>
-      <p style="margin: 0.3125rem 0;">WHATSAPP (MARKETING)</p>
-      <p style="margin: 0;"><strong>+62880404XXXX</strong></p>
-      <p style="margin: 0.3125rem 0;">EMAIL</p>
-      <p style="margin: 0;">infoisekairesidence@japan.com</p>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<footer class="bg-secondary text-white py-4">
+    <div class="container">
+        <div class="d-flex row">
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h2>Hubungi Kami</h2>
+                <address>
+                    <p>PHONE: 081-756.2003</p>
+                    <p>Office Isekai Residence, Japan</p>
+                    <p>WHATSAPP (MARKETING): <strong>+62880404XXXX</strong></p>
+                    <p>EMAIL: infoisekairesidence@japan.com</p>
+                </address>
+            </div>
+            <!-- Menu -->
+            <div class="col-md-4">
+                <h3>MENU</h3>
+                <ul class="list-unstyled">
+                    <li><a href="AboutUs.php" class="text-white">About Us</a></li>
+                    <li><a href="Product.php" class="text-white">Product</a></li>
+                    <li><a href="Location.php" class="text-white">Location</a></li>
+                    <li><a href="ContactUs.php" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Others -->
+            <div class="col-md-4">
+                <h3>OTHERS</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><strong>FOLLOW US</strong></li>
+                    <li><a href="#" class="text-white">Facebook</a></li>
+                    <li><a href="#" class="text-white">Twitter</a></li>
+                    <li><a href="#" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center mt-4">&copy; <?php echo date("Y"); ?> My Website. All Rights Reserved.</p>
     </div>
-    <!-- Menu -->
-    <div>
-      <h3 style="margin: 0 0 0.625rem;">MENU</h3>
-      <p style="margin: 0.3125rem 0;">About Us</p>
-      <p style="margin: 0.3125rem 0;">Product</p>
-      <p style="margin: 0.3125rem 0;">Location</p>
-      <p style="margin: 0.3125rem 0;">Contact Us</p>
-    </div>
-    <!-- Others -->
-    <div>
-      <h3 style="margin: 0 0 0.625rem;">OTHERS</h3>
-      <p style="margin: 0.3125rem 0;">Privacy Policy</p>
-      <p style="margin: 0.3125rem 0; font-weight: bold;">FOLLOW US</p>
-    </div>
-  </div>
-    <link rel="stylesheet" href="asset/style/footer.css">
-
-        <p style="text-align: center;">&copy; <?php echo date("Y"); ?> My Website. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
