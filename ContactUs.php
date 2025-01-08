@@ -153,7 +153,7 @@ if (isset($_POST['submit'])) {
             <textarea class="form-control" name="message" id="Textarea" rows="3" required></textarea>
     </div>
         <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3">Send Message</button>
+        <button type="submit" name="submit" class="btn btn-primary mb-3">Send Message</button>
         </div>
         </form>
     </div>
