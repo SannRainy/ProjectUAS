@@ -26,7 +26,7 @@
     <div class="side-bg">
         <img src="asset/img/bg_card.png" alt="Side Image">
     </div>
-    <div class="right-text">
+    <div class="right-text" style="color: white;">
         <h1>Suasana yang<br>Tenang</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum quod eum. Nam vel molestias libero alias assumenda repellat cum excepturi, quasi inventore adipisci ullam nulla, veniam qui sequi debitis.</p>
     </div>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Grid Layout for Desktop -->
-    <div class="card-contain d-flex flex-column flex-md-row justify-content-between gap-4 d-none d-md-flex">
+    <div class="card-contain d-flex flex-column flex-md-row justify-content-center gap-4 d-none d-md-flex">
         <?php 
         $cardImages = [
             "asset/img/bg_card-item1.png",
