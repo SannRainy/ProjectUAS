@@ -21,7 +21,7 @@ if (!isset($_SESSION["username"])) {
     <link rel="stylesheet" href="asset/style/header.css">
     <link rel="stylesheet" href="asset/style/global.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5hb7xvEv+MCeI6UJIFK7/sy6Te/XImsaGoAX1Y" crossorigin="anonymous">
-    <title>My Website</title>
+    <title>Isekai</title>
 </head>
 <body>
 <header>
@@ -62,7 +62,7 @@ if (!isset($_SESSION["username"])) {
     <!-- Background Image with Text -->
     <div class="bg-img" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
     <img src="asset/img/bg_head.png" alt="Background Image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
-    <div class="text-overlay" style="position: absolute; z-index: 1; color: white; top: 50%; left: 10%; transform: translateY(-50%);">
+    <div class="text-overlay" style="position: absolute; z-index: 1; color: white; top: 50%; left: 10%;">
         <p style="font-size: 1.5rem; margin: 0;">ISEKAI RESIDENCE</p>
         <h1 style="font-size: 2.5rem; font-weight: bold; margin: 0;">Pengalaman Hidup<br>Yang Tenang dan Damai</h1>
     </div>

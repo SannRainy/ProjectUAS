@@ -38,3 +38,13 @@
   animation: fadeInUp 1s ease-in-out;
   -webkit-animation: fadeInUp 1s ease-in-out;
 }
+
+.text-overlay {
+  animation: fadeInUp 1s ease-in-out;
+  -webkit-animation: fadeInUp 1s ease-in-out;
+}
+
+.container-fluid{
+  animation: fadeInUp 1s ease-in-out;
+  -webkit-animation: fadeInUp 1s ease-in-out;
+}
