@@ -51,7 +51,7 @@
     <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Lokasi Strategis</h2>
     <div class="container-fluid" style="background-color: #dcdcdc; margin-left: 0 auto; margin-right: 0 auto; border-radius: 0.5rem; overflow: hidden;">
         <!-- Replace this div with an iframe for Google Maps -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.1748166715984!2d138.6405014!3d35.4752183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601be721e912db77%3A0xed043493c8ad92e1!2sAokigahara!5e0!3m2!1sid!2sid!4v1736302458940!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d660.3547799242144!2d111.54240048003608!3d-7.6394963000000065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1736310582571!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
 

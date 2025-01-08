@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/style/global.css">
     <link rel="stylesheet" href="asset/style/home.css">
     <script src="asset/script/home.js" defer></script>
     <title>Home</title>
@@ -11,7 +12,7 @@
 <body>
 <main>
     <!-- Who We Are Section -->
-    <section class="who-we-are d-flex text-start fade-in-up" style="padding-left: 3rem; padding-top: 5rem;">
+    <section class="who-we-are d-flex text-start" style="z-index: 1; padding-left: 3rem; padding-top: 5rem;">
         <article style="color:white;">
             <p style="font-size: 1.5rem;">Who we Are</p>
             <h1 style="font-size: 2.5rem; font-weight: bold;">Isekai Residence<br>Living in Your Dream</h1>
@@ -21,15 +22,16 @@
     </section>
 
     <!-- Side Image and Text Section -->
-    <section class="side-image-text d-flex fade-in-up" style="width: 100%; height: 40rem;">
-        <div class="side-bg position-relative" style="width: 60%; height: 100%; overflow: hidden;">
-            <img src="asset/img/bg_card.png" alt="Side Image" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="right-text d-flex flex-column justify-content-center" style="width: 40%; padding: 2rem; color: white;">
-            <h1>Suasana yang<br>Tenang</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum quod eum. Nam vel molestias libero alias assumenda repellat cum excepturi, quasi inventore adipisci ullam nulla, veniam qui sequi debitis.</p>
-        </div>
-    </section>
+    <section class="side-image-text d-flex fade-in-up" style="width: 100%; height: auto;">
+    <div class="side-bg">
+        <img src="asset/img/bg_card.png" alt="Side Image">
+    </div>
+    <div class="right-text">
+        <h1>Suasana yang<br>Tenang</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum quod eum. Nam vel molestias libero alias assumenda repellat cum excepturi, quasi inventore adipisci ullam nulla, veniam qui sequi debitis.</p>
+    </div>
+</section>
+
 
     <!-- Title and Card Section -->
     <section class="title-and-cards d-flex flex-column align-items-center">

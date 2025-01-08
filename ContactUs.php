@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
@@ -62,7 +61,7 @@
     <div style="flex: 1; width: 100%; max-width: 18.75rem; height: 18.75rem; border-radius: 0.5rem; object-fit: cover; overflow: hidden;">
         <img src="asset/img/bg_card-item1.png" alt="side_img" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
-</div>
+    </div>
 <!--Contact Form-->
 <div class="container-fluid align-self-center">
 <!--Title-->        

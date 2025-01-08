@@ -1,4 +1,5 @@
 <head>
+<link rel="stylesheet" href="asset/style/global.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <footer class="bg-secondary text-white py-4">
