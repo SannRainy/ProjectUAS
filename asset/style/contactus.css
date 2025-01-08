@@ -1,0 +1,49 @@
+.card-0:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.card-1:hover{
+    transform: scale(1.05); 
+}
+.card-2:hover{
+    transform: scale(1.05); 
+}
+.card-3:hover{
+    transform: scale(1.05); 
+}
+
+.card-0 .card-img-top {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.card-1 .card-img-top {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.card-2 .card-img-top {
+    border: 2px solid rgb(255, 255, 255);
+}
+.card-3 .card-img-top {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.card-0{
+    transition: transform 0.4s ease-in-out;
+}
+.card-1{
+    transition: transform 0.4s ease-in-out;
+}
+.card-2{
+    transition: transform 0.4s ease-in-out;
+}
+
+.card-3{
+    transition: transform 0.4s ease-in-out;
+}
+.card-text{
+    color: aliceblue;
+}

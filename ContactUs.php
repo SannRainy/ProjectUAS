@@ -1,10 +1,73 @@
 <?php include 'includes/header.php'; ?>
+<?php
+include 'includes/db.php'; 
+
+// Start the session if it hasn't been started already
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+$error = "";
+$success = "";
+
+// Ensure the user is logged in
+if (!isset($_SESSION["is_login"])) {
+    header("Location: ContactUs.php");
+    exit();
+}
+
+// Check if the form is submitted
+if (isset($_POST['submit'])) {
+    // Capture form input
+    $contact = $_POST['contact'];
+    $message = $_POST['message'];
+    $username = $_SESSION['username'];  // Assuming the username is stored in the session
+
+    // Create the PDO connection
+    $pdo = pdo_connect_mysql();
+
+    // Validate the input
+    if (empty($message)) {
+        $error = "Message field cannot be empty.";
+    } else {
+        try {
+            // Check if the user exists
+            $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+            $stmt->bindParam(':username', $username);
+            $stmt->execute();
+
+            if ($stmt->rowCount() > 0) {
+                // Insert the message into the Contact table
+                $stmt = $pdo->prepare("INSERT INTO Contact (username, contact, message) VALUES (:username, :contact, :message)");
+                $stmt->bindParam(':username', $username);
+                $stmt->bindParam(':contact', $contact);
+                $stmt->bindParam(':message', $message);
+
+                if ($stmt->execute()) {
+                    $success = "Message sent successfully!";
+                } else {
+                    $error = "Failed to send message. Please try again.";
+                }
+            } else {
+                $error = "User not found.";
+            }
+        } catch (PDOException $e) {
+            $error = "Database query failed: " . $e->getMessage();
+        }
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style/contactus.css">
+    <link rel="stylesheet" href="asset/style/global.css">
     <title>Contact Us</title>
 </head>
 <body>
@@ -19,28 +82,28 @@
     </div>
     <!--Card container-->
     <div class="Card-container container-fluid d-flex gap-4 justify-content-center align-items-center" style="padding-top: 5rem;">
-        <div class="card" style="width: 15rem;">
+        <div class="card-0" style="width: 15rem;">
             <img src="asset/img/logo.jpg" alt="card1">
             <div class="card-body">
-                <p class="card-text">Our people</p>
+                <p class="card-text">Farhan Firmansyah</p>
             </div>
         </div>
-        <div class="card" style="width: 15rem">
+        <div class="card-1" style="width: 15rem">
             <img src="asset/img/logo.jpg" alt="card1">
             <div class="card-body">
-                <p class="card-text">Our people</p>
+                <p class="card-text">Krisna Satya A</p>
             </div>
         </div>
-        <div class="card" style="width: 15rem">
+        <div class="card-2" style="width: 15rem">
             <img src="asset/img/logo.jpg" alt="card1">
             <div class="card-body">
-                <p class="card-text">Our people</p>
+                <p class="card-text">M. Hernanda Fikri W</p>
             </div>
         </div>
-        <div class="card" style="width: 15rem">
+        <div class="card-3" style="width: 15rem">
             <img src="asset/img/logo.jpg" alt="card1">
             <div class="card-body">
-                <p class="card-text">Our people</p>
+                <p class="card-text">Nanda Muhammad F</p>
             </div>
         </div>
     </div>
@@ -64,29 +127,31 @@
     </div>
 <!--Contact Form-->
 <div class="container-fluid align-self-center">
-<!--Title-->        
-        <div class="text-start" style="color: white; padding-top: 4rem;">
-            <p style="font-size: 1rem;">Leave a Message</p>
-            <p style="font-size: 1.5rem; font-weight: bold;">We Love to Hear From You</p>
-        </div>
-<!--Form-->
-        <form style="padding-bottom: 4rem;">
-        <div class="mb-3">
-            <label for="InputEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
+    <!-- Title -->
+    <div class="text-start" style="color: white; padding-top: 4rem;">
+        <p style="font-size: 1rem;">Leave a Message</p>
+        <p style="font-size: 1.5rem; font-weight: bold;">We Love to Hear From You</p>
+    </div>
+
+    <!-- Error and Success Messages -->
+    <?php if ($error): ?>
+        <div class="alert alert-danger"> <?= htmlspecialchars($error) ?> </div>
+    <?php endif; ?>
+
+    <?php if ($success): ?>
+        <div class="alert alert-success"> <?= htmlspecialchars($success) ?> </div>
+    <?php endif; ?>
+
+    <!-- Form -->
+    <form method="POST" style="padding-bottom: 4rem;">
         <div class="mb-3">
             <label for="InputContact" class="form-label">Contact</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="08**********">
-        </div>
-        <div class="mb-3">
-            <label for="InputName" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+            <input type="text" class="form-control" name="contact" id="InputContact" placeholder="08**********">
         </div>
         <div class="mb-3">
             <label for="Textarea" class="form-label">Message</label>
-            <textarea class="form-control" id="Textarea" rows="3"></textarea>
-        </div>
+            <textarea class="form-control" name="message" id="Textarea" rows="3" required></textarea>
+    </div>
         <div class="col-auto">
         <button type="submit" class="btn btn-primary mb-3">Send Message</button>
         </div>
