@@ -1,98 +1,200 @@
-/* Struktur utama untuk gambar dan teks */
-.side-image-text {
+/* Side Image and Text */
+.d-flex {
     display: flex;
-    flex-wrap: wrap; /* Agar elemen otomatis berbaris ke bawah saat ruang tidak cukup */
-    height: auto;
+    flex-wrap: wrap;
 }
 
-/* Gambar */
 .side-bg {
     position: relative;
-    width: 60%; /* Lebar gambar default */
-    height: auto;
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
 
-.side-bg img {
-    width: 100%; /* Gambar memenuhi lebar */
+.side-img img {
+    width: 100%;
     height: 100%;
-    object-fit: cover; /* Jangan hilangkan bagian gambar */
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out;
 }
 
-/* Teks */
 .right-text {
-    width: 40%; /* Lebar teks default */
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    position: relative;
+    z-index: 1;
 }
 
-/* Media Queries untuk Layar Kecil */
+.right-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.right-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Hover Effect on Image */
+.side-bg:hover .side-img img {
+    transform: translate(-50%, -50%) scale(1.1); /* Zoom in effect */
+}
+
+.d-flex:hover .side-bg {
+    transform: scale(1.05); /* Slightly scale up the background on hover */
+}
+
+/* Title and Cards Section */
+.title-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.title-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cards Container */
+.card-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card {
+    width: 18rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hover zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card-item:hover {
+    transform: scale(1.05); /* Hover zoom effect */
+    
+}
+
+
+/* Profile Cards */
+.card-contain > div {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    transition: transform 0.3s ease;
+}
+
+.card-contain > div:hover {
+    transform: translateY(-10px); /* Hover animation */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-contain > div h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card-contain > div p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-contain > div span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .side-bg, .right-text {
+        width: 50%;
+    }
+}
+
 @media (max-width: 768px) {
-    .side-image-text {
-        flex-direction: column; /* Ubah arah flex menjadi kolom */
+    .side-bg, .right-text {
+        width: 100%;
     }
 
-    .side-bg {
-        width: 100%; /* Gambar memenuhi lebar penuh */
-        height: auto; /* Tinggi otomatis */
+    .title-text h1 {
+        font-size: 2.5rem;
     }
 
-    .side-bg img {
-        width: 100%; /* Pastikan gambar melebar penuh */
-        height: auto; /* Sesuaikan tinggi secara proporsional */
+    .title-text p {
+        font-size: 1rem;
     }
 
-    .right-text {
-        width: 100%; /* Teks memenuhi lebar penuh */
-        padding: 1.5rem; /* Sesuaikan padding */
-        text-align: center; /* Rata tengah teks */
+    .card-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .card-contain > div {
+        width: 90%;
+        margin-bottom: 2rem;
     }
 }
 
-.card-item{
-    transition: transform 0.4s ease-in-out;
-}
-.card-item:hover{
-    transform: scale(1.05); 
-}
-
-.card-0{
-    transition: transform 0.4s ease-in-out;
-}
-.card-1{
-    transition: transform 0.4s ease-in-out;
-}
-.card-2{
-    transition: transform 0.4s ease-in-out;
+/* Scroll Animation for Side Text and Image */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.card-0:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-}
-.card-1:hover{
-    transform: scale(1.05); 
-}
-.card-2:hover{
-    transform: scale(1.05); 
+/* Menambahkan class yang akan mengaktifkan animasi */
+.fade-in-up {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
 }
 
-.card-0 .card-img-top {
-    border: 2px solid rgb(255, 255, 255);
+.d-flex {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
 }
 
-.card-1 .card-img-top {
-    border: 2px solid rgb(255, 255, 255);
+.card {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
 }
-
-.card-2 .card-img-top {
-    border: 2px solid rgb(255, 255, 255);
+.card-item {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
 }
-
