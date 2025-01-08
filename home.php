@@ -35,28 +35,32 @@
 
     <!-- Title and Card Section -->
     <section class="title-and-cards d-flex flex-column align-items-center">
-        <div class="title-text d-flex flex-column text-center" style="color: white;">
-            <h1>Isekai Residence of Japan</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-            Odio accusantium consequuntur vel necessitatibus, deserunt exercitationem fugit maxime dicta doloremque<br>
-            dolore neque laboriosam magni perspiciatis tempore nisi minus blanditiis ducimus amet.</p>
-        </div>
-        <div class="card-contain d-flex flex-column flex-md-row justify-content-between gap-4">
-            <?php 
-            $cardImages = [
-                "asset/img/bg_card-item1.png",
-                "asset/img/bg_card-item2.png",
-                "asset/img/bg_card-item3.png"
-            ];
-            foreach ($cardImages as $image): ?>
-                <div class="card" style="width: 18rem; height: 20rem; margin-top: 2rem;">
-                    <a href ="#" style="text-decoration: none; color: inherit; height: 100%; display: block;">
-                        <img src="<?php echo $image; ?>" class="card-img-top" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
-                    </a>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </section>
+    <div class="title-text d-flex flex-column text-center" style="color: white;">
+        <h1>Isekai Residence of Japan</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Odio accusantium consequuntur vel necessitatibus, deserunt exercitationem fugit maxime dicta doloremque<br>
+        dolore neque laboriosam magni perspiciatis tempore nisi minus blanditiis ducimus amet.</p>
+    </div>
+    <div class="card-contain d-flex flex-column flex-md-row justify-content-between gap-4">
+        <?php 
+        $cardImages = [
+            "asset/img/bg_card-item1.png",
+            "asset/img/bg_card-item2.png",
+            "asset/img/bg_card-item3.png"
+        ];
+        foreach ($cardImages as $index => $image): ?>
+            <div class="card card-<?php echo $index; ?>" style="width: 18rem; height: 20rem; margin-top: 2rem;">
+                <a href="#" style="text-decoration: none; color: inherit; height: 100%; display: block;">
+                    <img src="<?php echo $image; ?>" 
+                         class="card-img-top image-<?php echo $index; ?>" 
+                         alt="Card Image <?php echo $index + 1; ?>" 
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>
+
 
     <!-- Profile Cards Section -->
     <section class="profile-cards container" style="padding: 4rem 0; color: #fff;">
