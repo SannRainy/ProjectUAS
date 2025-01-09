@@ -5,51 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <style>
-        .product-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px;
-            background-color: #333;
-        }
-
-        .product-card {
-            width: 200px;
-            height: 300px;
-            background-color: #B0C4DE;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .product-card span {
-            width: 100%;
-            text-align: center;
-            background-color: #f1f1f1;
-            padding: 10px 0;
-            font-weight: bold;
-            border-radius: 0 0 10px 10px;
-        }
-    </style>
-</head>
-<body>
-        
-
-    <section class="product-container">
-        <div class="product-card">
-            <span>District Casual</span>
-        </div>
-        <div class="product-card">
-            <span>District Casual</span>
-        </div>
-        <div class="product-card">
-            <span>District Casual</span>
-        </div>
-    </section>
+    <!--card container-->
+    <div class="container container-fluid w-100" style="padding-top: 4rem; padding-bottom: 3rem;">
+<!--card item-->
+<div class="d-flex w-100 container-fluid gap-4 justify-content-center align-items-center">
+<div class="card" style="width: 18rem; height: 25rem; overflow: hidden; object-fit: cover;">
+  <a href="#"><img src="./asset/img/bg_card-item1.png" alt="card1"></a>
+</div>
+<div class="card" style="width: 18rem; height: 25rem; overflow: hidden; object-fit: cover;">
+  <a href="#"><img src="./asset/img/bg_card-item2.png" alt="card1"></a>
+</div>
+<div class="card" style="width: 18rem; height: 25rem; overflow: hidden; object-fit: cover;">
+  <a href="#"><img src="./asset/img/bg_card-item3.png" alt="card1"></a>
+</div>
+</div>
+    </div>
     <?php include 'includes/footer.php'; ?>
 </body>
 </html>
