@@ -1,98 +1,211 @@
-/* Struktur utama untuk gambar dan teks */
-.side-image-text {
+/* Side Image and Text */
+.d-flex {
     display: flex;
-    flex-wrap: wrap; /* Agar elemen otomatis berbaris ke bawah saat ruang tidak cukup */
-    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-/* Gambar */
 .side-bg {
     position: relative;
-    width: 60%; /* Lebar gambar default */
-    height: auto;
+    width: 50%; /* Membatasi lebar gambar 50% dari container */
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
 }
 
 .side-bg img {
-    width: 100%; /* Gambar memenuhi lebar */
+    width: 100%;
     height: 100%;
-    object-fit: cover; /* Jangan hilangkan bagian gambar */
+    object-fit: cover;
 }
 
-/* Teks */
 .right-text {
-    width: 40%; /* Lebar teks default */
     padding: 2rem;
+    width: 50%; /* Teks mengisi 50% container */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    position: relative;
+    z-index: 1;
 }
 
-/* Media Queries untuk Layar Kecil */
+.right-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.right-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
-    .side-image-text {
-        flex-direction: column; /* Ubah arah flex menjadi kolom */
-    }
-
-    .side-bg {
-        width: 100%; /* Gambar memenuhi lebar penuh */
-        height: auto; /* Tinggi otomatis */
-    }
-
-    .side-bg img {
-        width: 100%; /* Pastikan gambar melebar penuh */
-        height: auto; /* Sesuaikan tinggi secara proporsional */
+    .side-bg, .right-text {
+        width: 100%; /* Pada layar kecil, gambar dan teks menjadi full-width */
     }
 
     .right-text {
-        width: 100%; /* Teks memenuhi lebar penuh */
-        padding: 1.5rem; /* Sesuaikan padding */
-        text-align: center; /* Rata tengah teks */
+        padding: 1rem; /* Mengurangi padding agar lebih responsif */
+    }
+
+    .side-image-text {
+        flex-direction: column; /* Gambar dan teks berurutan pada layar kecil */
     }
 }
 
-.card-item{
-    transition: transform 0.4s ease-in-out;
-}
-.card-item:hover{
-    transform: scale(1.05); 
+/* Hover Effect on Image */
+.side-bg:hover .side-img img {
+    transform: translate(-50%, -50%) scale(1.1); /* Zoom in effect */
 }
 
-.card-0{
-    transition: transform 0.4s ease-in-out;
-}
-.card-1{
-    transition: transform 0.4s ease-in-out;
-}
-.card-2{
-    transition: transform 0.4s ease-in-out;
+.d-flex:hover .side-bg {
+    transform: scale(1.05); /* Slightly scale up the background on hover */
 }
 
-.card-0:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-}
-.card-1:hover{
-    transform: scale(1.05); 
-}
-.card-2:hover{
-    transform: scale(1.05); 
+/* Title and Cards Section */
+.title-text {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.card-0 .card-img-top {
-    border: 2px solid rgb(255, 255, 255);
+.title-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.card-1 .card-img-top {
-    border: 2px solid rgb(255, 255, 255);
+.title-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.card-2 .card-img-top {
-    border: 2px solid rgb(255, 255, 255);
+/* Cards Container */
+.card-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Anda bisa coba space-evenly atau flex-start */
+    gap: 0.5rem;
 }
 
+/* Card */
+.card {
+    width: 18rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;  /* Mengurangi margin-top agar jarak lebih kecil */
+    margin-bottom: 1rem; /* Menambahkan margin bawah jika perlu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05); /* Hover zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Profile Cards */
+.card-contain > div {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    transition: transform 0.3s ease;
+}
+
+.card-contain > div:hover {
+    transform: translateY(-10px); /* Hover animation */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-contain > div h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card-contain > div p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-contain > div span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .side-bg, .right-text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-bg, .right-text {
+        width: 100%;
+    }
+
+    .title-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .title-text p {
+        font-size: 1rem;
+    }
+
+    .card-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .card-contain > div {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    /* Adjust layout for Side Image and Text */
+    .side-image-text {
+        flex-direction: column; /* Stack image and text vertically on mobile */
+    }
+}
+
+/* Scroll Animation for Side Text and Image */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menambahkan class yang akan mengaktifkan animasi */
+.fade-in-up {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
+
+.d-flex {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
+
+.card {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
+.card-item {
+    animation: fadeInUp 2s ease-in-out;
+    -webkit-animation: fadeInUp 2s ease-in-out;
+}
