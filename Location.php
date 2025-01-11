@@ -13,7 +13,7 @@
     <!-- First Section -->
     <div class="section">
         <div class="image-content">
-            <img src="asset/img/bg_card-item1.png" alt="card1">
+            <img src="asset/img/bg_card-item4.jpg" alt="card1">
         </div>
         <div class="text-content">
             <h2>Damai</h2>
@@ -28,14 +28,14 @@
             <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Eros eu elementum nulla himenaeos sagittis accumsan nec...</p>
         </div>
         <div class="image-content">
-            <img src="asset/img/bg_card-item2.png" alt="card2">
+            <img src="asset/img/bg_card-item5.jpg" alt="card2">
         </div>
     </div>
 
     <!-- Third Section -->
     <div class="section">
         <div class="image-content">
-            <img src="asset/img/bg_card-item3.png" alt="card3">
+            <img src="asset/img/bg_card-item6.jpg" alt="card3">
         </div>
         <div class="text-content">
             <h2>Damai</h2>

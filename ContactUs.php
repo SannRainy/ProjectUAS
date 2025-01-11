@@ -81,37 +81,38 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
     <!--Card container-->
-    <div class="Card-container container-fluid d-flex gap-4 justify-content-center align-items-center" style="padding-top: 5rem;">
-        <div class="card-0" style="width: 15rem;">
-            <img src="asset/img/logo.jpg" alt="card1">
-            <div class="card-body">
-                <p class="card-text">Farhan Firmansyah</p>
-            </div>
-        </div>
-        <div class="card-1" style="width: 15rem">
-            <img src="asset/img/logo.jpg" alt="card1">
-            <div class="card-body">
-                <p class="card-text">Krisna Satya A</p>
-            </div>
-        </div>
-        <div class="card-2" style="width: 15rem">
-            <img src="asset/img/logo.jpg" alt="card1">
-            <div class="card-body">
-                <p class="card-text">M. Hernanda Fikri W</p>
-            </div>
-        </div>
-        <div class="card-3" style="width: 15rem">
-            <img src="asset/img/logo.jpg" alt="card1">
-            <div class="card-body">
-                <p class="card-text">Nanda Muhammad F</p>
-            </div>
+<div class="Card-container container-fluid d-flex gap-4 justify-content-center align-items-center" style="padding-top: 5rem;">
+    <div class="card-0" style="width: 15rem; height: 20rem; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+        <img src="asset/img/farhan.jpg" alt="card1" style="width: 100%; height: auto; max-height: 70%; object-fit: cover;">
+        <div class="card-body" style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+            <p class="card-text">Farhan Firmansyah</p>
         </div>
     </div>
+    <div class="card-1" style="width: 15rem; height: 20rem; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+        <img src="asset/img/satya.gif" alt="card1" style="width: 100%; height: auto; max-height: 70%; object-fit: cover;">
+        <div class="card-body" style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+            <p class="card-text">Krisna Satya A</p>
+        </div>
+    </div>
+    <div class="card-2" style="width: 15rem; height: 20rem; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+        <img src="asset/img/hernanda.jpg" alt="card1" style="width: 100%; height: auto; max-height: 70%; object-fit: cover;">
+        <div class="card-body" style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+            <p class="card-text">M. Hernanda Fikri W</p>
+        </div>
+    </div>
+    <div class="card-3" style="width: 15rem; height: 20rem; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+        <img src="asset/img/firefly.webp" alt="card1" style="width: 100%; height: auto; max-height: 70%; object-fit: cover;">
+        <div class="card-body" style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+            <p class="card-text">Nanda Muhammad F</p>
+        </div>
+    </div>
+</div>
+
     <!--Side img and Text-->
-    <div style="display: inline-flex; align-items: center; justify-content: space-between; color: white; padding: 1.25rem; padding-top: 4rem; border-radius: 0.5rem; width: 100%; max-width: 50rem; margin: 0 auto;">
+<div style="display: flex; align-items: center; justify-content: space-between; color: white; padding: 1.25rem 1.25rem 4rem; border-radius: 0.5rem; max-width: 50rem; margin: 0 auto;">
     <div style="flex: 1; padding-right: 1.25rem;">
-        <h3 style="font-size: 0.875rem; text-transform: uppercase;">GET IN TOUCH</h3>
-        <h2 style="font-size: 1.5rem; margin-top: 0.625rem; margin-bottom: 1.25rem;">Kunjungi Kantor Marketing Kami</h2>
+        <h3 style="font-size: 0.875rem; text-transform: uppercase; margin-bottom: 0.625rem;">GET IN TOUCH</h3>
+        <h2 style="font-size: 1.5rem; margin: 0.625rem 0 1.25rem;">Kunjungi Kantor Marketing Kami</h2>
         <p><strong>Head Office / Marketing Office</strong></p>
         <p>info.isekairesidence@japan.com</p>
         <p>Senin - Jumat: 08.00 - 17.00</p>
@@ -121,10 +122,17 @@ if (isset($_POST['submit'])) {
         <p>@isekai.residence</p>
         <p>@isekai.residence</p>
     </div>
-    <div style="flex: 1; width: 100%; max-width: 18.75rem; height: 18.75rem; border-radius: 0.5rem; object-fit: cover; overflow: hidden;">
-        <img src="asset/img/bg_card-item1.png" alt="side_img" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="flex: 1; max-width: 40rem; height: 20rem; border-radius: 0.5rem; overflow: hidden;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d660.3547799242144!2d111.54240048003608!3d-7.6394963000000065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1736310582571!5m2!1sid!2sid" 
+            style="width: 100%; height: 100%; border: none;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
-    </div>
+</div>
+
 <!--Contact Form-->
 <div class="container-fluid align-self-center">
     <!-- Title -->
