@@ -1,0 +1,53 @@
+/* Styling for Product Section */
+.product-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+.product-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Section Container Styling */
+.section-container {
+    margin-bottom: 40px;
+}
+
+/* Product Grid Styling */
+.grid-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.Img-container {
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.Img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
