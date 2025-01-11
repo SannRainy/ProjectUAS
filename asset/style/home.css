@@ -1,28 +1,26 @@
 /* Side Image and Text */
 .d-flex {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .side-bg {
     position: relative;
+    width: 50%; /* Membatasi lebar gambar 50% dari container */
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
 }
 
-.side-img img {
+.side-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s ease-in-out;
 }
 
 .right-text {
     padding: 2rem;
+    width: 50%; /* Teks mengisi 50% container */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +36,21 @@
 .right-text p {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .side-bg, .right-text {
+        width: 100%; /* Pada layar kecil, gambar dan teks menjadi full-width */
+    }
+
+    .right-text {
+        padding: 1rem; /* Mengurangi padding agar lebih responsif */
+    }
+
+    .side-image-text {
+        flex-direction: column; /* Gambar dan teks berurutan pada layar kecil */
+    }
 }
 
 /* Hover Effect on Image */
@@ -71,32 +84,25 @@
 .card-contain {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: flex-start; /* Anda bisa coba space-evenly atau flex-start */
+    gap: 0.5rem;
 }
 
+/* Card */
 .card {
     width: 18rem;
     height: 20rem;
     overflow: hidden;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1rem;  /* Mengurangi margin-top agar jarak lebih kecil */
+    margin-bottom: 1rem; /* Menambahkan margin bawah jika perlu */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Hover Effect */
 .card:hover {
     transform: scale(1.05); /* Hover zoom effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-.card-item:hover {
-    transform: scale(1.05); /* Hover zoom effect */
-    
 }
 
 
@@ -164,6 +170,11 @@
     .card-contain > div {
         width: 90%;
         margin-bottom: 2rem;
+    }
+
+    /* Adjust layout for Side Image and Text */
+    .side-image-text {
+        flex-direction: column; /* Stack image and text vertically on mobile */
     }
 }
 
